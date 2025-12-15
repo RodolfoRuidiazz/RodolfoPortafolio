@@ -1,11 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=º, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rodolfo Ruidiaz | Full Stack Java Developer</title>
+<meta name="description" content="Portfolio profesional de Rodolfo Ruidiaz, desarrollador Full Stack Java.">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 </head>
 <body>
-    
+<canvas id="galaxy"></canvas>
+<header class="header">
+  <span class="logo">Rodolfo</span>
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#sobre">Sobre mí</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Proyectos</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+<!-- HERO -->
+<section id="inicio" class="hero">
+  <div class="hero-card tilt deep-3d">
+    <img src="/img/FotoPerfil.jfif" alt="Rodolfo Ruidiaz">
+    <h1>Rodolfo Ruidiaz</h1>
+    <h3>Full Stack Java Developer</h3>
+    <div class="hero-buttons">
+      <a href="docs/Template CV-Generation-Segundo (1).pdf" download class="btn primary">
+        <i class="fas fa-file-download"></i> Descargar CV
+      </a>
+      <a href="https://www.linkedin.com/in/rodolfo-ruidiaz-full-stack-developer/" target="_blank" class="btn outline">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/RodolfoRuidiaz" target="_blank" class="btn outline">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- SOBRE MI -->
+<section id="sobre" class="section about">
+  <h2>Sobre mí</h2>
+  <p>
+    Soy <strong>Desarrollador Full Stack Java</strong> con pasión por crear
+    aplicaciones web modernas, seguras y escalables.
+    Me especializo en el desarrollo backend con Java y bases de datos,
+    combinándolo con interfaces atractivas y experiencias de usuario modernas.
+  </p>
+  <p>
+    Me gusta aprender nuevas tecnologías, trabajar en proyectos desafiantes
+    y transformar ideas en soluciones digitales reales.
+  </p>
+</section>
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <h2 class="skills-title">Skills</h2>
+  <div class="skills-grid">
+    <div class="skill tilt deep-3d"><i class="fab fa-java"></i><span>Java</span></div>
+    <div class="skill tilt deep-3d"><i class="fab fa-js"></i><span>JavaScript</span></div>
+    <div class="skill tilt deep-3d"><i class="fab fa-html5"></i><span>HTML</span></div>
+    <div class="skill tilt deep-3d"><i class="fab fa-css3-alt"></i><span>CSS</span></div>
+    <div class="skill tilt deep-3d"><i class="fab fa-react"></i><span>React</span></div>
+    <div class="skill tilt deep-3d"><i class="fab fa-git-alt"></i><span>Git</span></div>
+  </div>
+</section>
+<!-- PROYECTOS -->
+<section id="portfolio" class="section">
+  <h2 class="proyect">Proyectos</h2>
+  <div class="portfolio-grid">
+    <div class="project tilt deep-3d">
+      <img src="/img/backtothegame.png">
+      <h3>Proyecto BackToTheGame</h3>
+      <p>Eccomerce video juegos retro</p>
+    </div>
+    <div class="project tilt deep-3d">
+      <img src="img/">
+      <h3>Aplicación Web</h3>
+      <p>Full Stack</p>
+    </div>
+  </div>
+</section>
+<!-- CONTACTO -->
+<section id="contacto" class="section">
+  <h2>Contacto</h2>
+  <form class="contact-form" id="contactForm">
+    <input type="text" name="name" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Email" required>
+    <textarea name="message" placeholder="Mensaje" required></textarea>
+    <button type="submit">Enviar mensaje</button>
+  </form>
+</section>
+<a href="https://wa.me/573143676243" class="whatsapp" target="_blank">
+  <i class="fab fa-whatsapp"></i>
+</a>
+<script src="script.js"></script>
 </body>
 </html>
+
